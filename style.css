@@ -76,3 +76,10 @@ a{
 a:visited{
     color: white;
 }
+
+@media (max-width: 786px){
+    .container{
+        padding: 40px 20px 40px 20px;
+        width: 400px;
+    }
+}
