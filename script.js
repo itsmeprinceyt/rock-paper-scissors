@@ -48,7 +48,6 @@ function gamePlay(playerMove){
     } else if (result === 'Tie'){
         score.ties +=1;
     }
-    console.log(score);
     localStorage.setItem('score',JSON.stringify(score));
     document.querySelector('.js-result').innerHTML = result;
     document.querySelector('.js-moves').innerHTML= `You
