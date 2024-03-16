@@ -13,33 +13,6 @@ function scoreReset(){
     scoreLoad();
     localStorage.remove('score');
 }
-let toggleB = false;
-let intervalID;
-let AutoPlay = document.querySelector('.noti');
-
-function autoPlay() {
-    if (!toggleB) {
-        toggleB = true;
-        AutoPlay.style.color = 'red';
-        AutoPlay.innerHTML = 'Autoplay is on!';
-        setTimeout(() => {
-            AutoPlay.style.opacity = 1;
-        }, 1500);
-        intervalID = setInterval(() => {
-            const playerMove = generateComputerMove();
-            gamePlay(playerMove);
-        }, 1500);
-    } else {
-        clearInterval(intervalID);
-        toggleB = false;
-        AutoPlay.style.color = 'yellow';
-        AutoPlay.innerHTML = 'Autoplay is off!';
-        setTimeout(() => {
-            AutoPlay.style.opacity = 0;
-        }, 5000);
-    }
-}
-document.querySelector('.auto-play').addEventListener('click', autoPlay);
 function gamePlay(playerMove){
     const ComputerMove = generateComputerMove();
     let result ='';

@@ -11,7 +11,6 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 600px;
-    padding: 40px;
 }
 .title{
     font-family: Arial;
@@ -51,9 +50,9 @@ body{
     cursor: pointer;
 }
 .js-button:active{
-    background-color: rgb(255, 226, 183);
+    background-color: rgb(19, 19, 19);
 }
-.reset-button, .github, .auto-play{
+.reset-button, .github{
     font-family: Arial;
     border: none;
     background-color: black;
@@ -64,7 +63,7 @@ body{
     font-size: 12px;
     cursor: pointer;
 }
-.reset-button:hover, .github:hover, .auto-play:hover{
+.reset-button:hover, .github:hover{
     opacity: 0.9;
 }
 .github{
@@ -77,39 +76,10 @@ a{
 a:visited{
     color: white;
 }
-.noti{
-    opacity: 0;
-    background-color: black;
-    padding: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    color: red;
-    font-family: Arial;
-    font-size: 12px;
-    position: absolute;
-    top: 430px;
-    left: 50%;
-    transform: translate(-50%);
-}
+
 @media (max-width: 786px){
     .container{
         padding: 40px 20px 40px 20px;
         width: 400px;
-    }
-    .noti{
-        opacity: 0;
-        background-color: black;
-        padding: 5px;
-        padding-right: 10px;
-        padding-left: 10px;
-        border-radius: 5px;
-        color: red;
-        font-family: Arial;
-        font-size: 12px;
-        position: absolute;
-        top: 485px;
-        left: 50%;
-        transform: translate(-50%);
     }
 }
